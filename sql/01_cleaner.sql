@@ -9,6 +9,7 @@ CREATE TABLE cleaners (
     state VARCHAR(2),
     birth_date DATETIME,
     status BOOLEAN,
+    created_at DATETIME,
     deleted_at DATETIME     
 );
 
@@ -25,3 +26,16 @@ CREATE TABLE bank_details (
 
     FOREIGN KEY(cod_cleaner) REFERENCES cleaners(id)
 );
+
+
+INSERT INTO cleaners(name,
+    lastname,
+    phone,
+    email,
+    address,
+    city,	
+    state,
+    birth_date,
+    status,
+    deleted_at)
+    VALUES('Victor Cleber', 'Ferreira da Silva', '021 117 9993', 'National av., 154', 'Jhonsonville','Wellington', '26-01-1978',  )
