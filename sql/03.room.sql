@@ -6,5 +6,6 @@ CREATE TABLE rooms (
     city VARCHAR(64),	
     state VARCHAR(2),
     status Boolean,
+    created_at DATETIME,
     deleted_at DATETIME    
 );

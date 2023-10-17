@@ -4,6 +4,7 @@ CREATE TABLE requests (
     cod_cleaning INTEGER,
     cod_item INTEGER,
     status BOOLEAN,
+    created_at DATETIME,
     deleted_at DATETIME,
 
     FOREIGN KEY(cod_cleaning) REFERENCES cleanings(id),

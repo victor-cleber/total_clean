@@ -6,6 +6,7 @@ CREATE TABLE cleanings (
     cod_cleaner INTEGER,
     cod_room INTEGER,
     status BOOLEAN,
+    created_at DATETIME,
     deleted_at DATETIME,
 
     FOREIGN KEY(cod_cleaner) REFERENCES cleaners(id),

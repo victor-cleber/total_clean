@@ -20,6 +20,7 @@ CREATE TABLE bank_details (
     account_number VARCHAR (20),
     cod_cleaner INTEGER,
     status BOOLEAN,
+    created_at DATETIME,
     deleted_at DATETIME,
 
     FOREIGN KEY(cod_cleaner) REFERENCES cleaners(id)

@@ -3,6 +3,7 @@ CREATE TABLE items (
     quantity INTEGER,
     description VARCHAR (155),
     status BOOLEAN,
+    created_at DATETIME,
     deleted_at DATETIME 
 );
 
