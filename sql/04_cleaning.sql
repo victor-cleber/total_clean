@@ -1,4 +1,4 @@
-CREATE TABLE cleaning (
+CREATE TABLE cleanings (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     date DATETIME,
     check_in DATETIME,
