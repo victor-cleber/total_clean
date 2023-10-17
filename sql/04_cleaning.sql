@@ -8,6 +8,6 @@ CREATE TABLE cleanings (
     status BOOLEAN,
     deleted_at DATETIME,
 
-    FOREIGN KEY(cod_cleaner)) REFERENCES clenaer(id),
-    FOREIGN KEY(cod_room)) REFERENCES room(id)
+    FOREIGN KEY(cod_cleaner)) REFERENCES cleaners(id),
+    FOREIGN KEY(cod_room)) REFERENCES rooms(id)
 );
