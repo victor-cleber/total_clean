@@ -10,3 +10,11 @@ CREATE TABLE cleaners (
     birth_date DATETIME,
     status Boolean    
 );
+
+
+CREATE TABLE bank_details (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name VARCHAR(16),
+    agency VARCHAR (16),
+    account VARCHAR (16)    
+);
