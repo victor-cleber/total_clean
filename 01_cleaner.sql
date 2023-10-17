@@ -8,7 +8,8 @@ CREATE TABLE cleaners (
     city VARCHAR(64),	
     state VARCHAR(2),
     birth_date DATETIME,
-    status Boolean    
+    status BOOLEAN,
+    deleted_at DATETIME     
 );
 
 
@@ -16,5 +17,7 @@ CREATE TABLE bank_details (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(16),
     agency VARCHAR (16),
-    account VARCHAR (16)    
+    account VARCHAR (16),
+    status BOOLEAN,
+    deleted_at DATETIME     
 );
