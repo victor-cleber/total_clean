@@ -6,6 +6,6 @@ CREATE TABLE requests (
     status BOOLEAN,
     deleted_at DATETIME,
 
-    FOREIGN KEY(cod_cleaning)) REFERENCES cleaning(id),
+    FOREIGN KEY(cod_cleaning)) REFERENCES cleanings(id),
     FOREIGN KEY(cod_item)) REFERENCES items(id)
 );
