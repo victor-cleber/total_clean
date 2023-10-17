@@ -15,9 +15,12 @@ CREATE TABLE cleaners (
 
 CREATE TABLE bank_details (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
-    name VARCHAR(16),
-    agency VARCHAR (16),
-    account VARCHAR (16),
+    bank VARCHAR(16),
+    account_name VARCHAR (50),
+    account_number VARCHAR (20),
+    cod_cleaner INTEGER,
     status BOOLEAN,
-    deleted_at DATETIME     
+    deleted_at DATETIME,
+
+    FOREIGN KEY(cod_cleaner) REFERENCES cleaners(id)
 );
