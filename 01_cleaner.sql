@@ -1,4 +1,4 @@
-CREATE TABLE cleners (
+CREATE TABLE cleaners (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(128),
     lastname VARCHAR (155),
